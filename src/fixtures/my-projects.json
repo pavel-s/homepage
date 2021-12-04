@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Netflix",
+    "description": "clone of home, login (with authorization), profiles, browse pages.",
+    "stack": "Typescript, react, styled-components, formik, react-router, firebase.",
+    "imagePreview": "images/projects/netflix.thumb.jpg",
+    "imageFull": "images/projects/netflix.png",
+    "github": "https://github.com/pavel-s/netflix",
+    "link": "https://netflix-rs.herokuapp.com/"
+  },
+  {
+    "title": "TTSBookReader",
+    "description": "android book reader with the core feature of reading books aloud using TTS engine. Support Epub v2 and custom JSON book formats.",
+    "stack": "react-native (expo), redux-toolkit, redux-persist, react-native-paper, react-navigation, axios.",
+    "imagePreview": "images/projects/ttsbookreader/library.thumb.webp",
+    "imageFull": "images/projects/ttsbookreader/library.png",
+    "github": "https://github.com/pavel-s/TTSBookReader",
+    "link": "https://github.com/pavel-s/TTSBookReader/releases/tag/v1.0.9-alpha.1"
+  },
+  {
+    "title": "Starbucks rewards",
+    "description": "clone of the rewards page from Starbucks website.",
+    "stack": "Typescript, react, styled-components, react-final-form.",
+    "imagePreview": "images/projects/starbucks-rewards.thumb.jpg",
+    "imageFull": "images/projects/starbucks-rewards.png",
+    "github": "https://github.com/pavel-s/react-starbucks-rewards",
+    "link": "https://starbucks-rewards-copy.herokuapp.com/"
+  },
+  {
+    "title": "React Movie",
+    "description": "simple movie watchlist, uses themoviedb api.",
+    "stack": "Typescript, react, redux-toolkit, redux-persist, material-ui, react-router, axios.",
+    "imagePreview": "images/projects/r-movie-app.thumb.jpg",
+    "imageFull": "images/projects/r-movie-app.png",
+    "github": "https://github.com/pavel-s/react-movie",
+    "link": "https://r-movie-app.herokuapp.com/"
+  }
+]
