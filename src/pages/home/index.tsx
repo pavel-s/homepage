@@ -16,7 +16,7 @@ import { Badge } from '@chakra-ui/react';
 import { useState } from 'react';
 import { ColorModeSwitcher } from '../../ColorModeSwitcher';
 import { FullImageModal } from '../../containers/full-image-modal';
-import projects from './../../fixtures/my-projects.json';
+import PROJECTS from './../../fixtures/my-projects.json';
 
 const Home = () => {
   const { colorMode } = useColorMode();
@@ -50,7 +50,7 @@ const Home = () => {
           My Projects:
         </Heading>
         <List>
-          {projects.map((project, i) => (
+          {PROJECTS.map((project, i) => (
             <ListItem display={{ md: 'flex' }} mb='1rem' key={i}>
               <Box>
                 <IconButton
@@ -103,6 +103,33 @@ const Home = () => {
               </Box>
             </ListItem>
           ))}
+        </List>
+        <Heading as='h2' mt='20' mb='2' fontSize='1.4rem'>
+          Contacts:
+        </Heading>
+        <List mb={4}>
+          <ListItem>
+            Telegram{' '}
+            <Link href='https://telegram.me/rtxnn' target='_blank'>
+              @rtxnn
+            </Link>
+          </ListItem>
+          <ListItem>
+            GitHub{' '}
+            <Link href='https://github.com/pavel-s' target='_blank'>
+              <Image
+                src='images/icons/GitHub-Mark-32px.png'
+                alt=''
+                htmlWidth='16px'
+                htmlHeight='16px'
+                display='inline-block'
+                verticalAlign='middle'
+                mr={1}
+                filter={colorMode === 'dark' ? 'invert(1)' : 'none'}
+              />
+              pavel-s
+            </Link>
+          </ListItem>
         </List>
         <FullImageModal
           isOpen={isOpen}
