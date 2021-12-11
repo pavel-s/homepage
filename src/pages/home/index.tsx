@@ -110,13 +110,21 @@ const Home = () => {
         <List mb={4}>
           <ListItem>
             Telegram{' '}
-            <Link href='https://telegram.me/rtxnn' target='_blank'>
+            <Link
+              href='https://telegram.me/rtxnn'
+              target='_blank'
+              rel='noopener'
+            >
               @rtxnn
             </Link>
           </ListItem>
           <ListItem>
             GitHub{' '}
-            <Link href='https://github.com/pavel-s' target='_blank'>
+            <Link
+              href='https://github.com/pavel-s'
+              target='_blank'
+              rel='noopener'
+            >
               <Image
                 src='images/icons/GitHub-Mark-32px.png'
                 alt=''
