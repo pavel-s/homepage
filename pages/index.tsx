@@ -55,9 +55,9 @@ const Home: NextPage = () => {
               </Text>
             </Heading>
             <Text mt='4'>
-              I&apos;m a junior react developer. You can see some of my projects
-              below. In the future I have plans to become a full stack developer
-              (node.js/express back-end).
+              I&apos;m a junior front-end developer. You can see some of my
+              projects below. In the future I have plans to become a full stack
+              developer (node.js/express back-end).
             </Text>
           </Box>
           <Box as='section' mt='20'>
@@ -73,6 +73,10 @@ const Home: NextPage = () => {
               <ListItem>http, REST API, axios</ListItem>
               <ListItem>Git, ftp, ssh, devtools, </ListItem>
               <ListItem>NodeJS, Express, Babel, Webpack</ListItem>
+              <ListItem>
+                Also, I have some experience with React Native (Expo) and
+                Electron.js
+              </ListItem>
             </UnorderedList>
           </Box>
           <Box as='section'>
