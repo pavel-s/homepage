@@ -1,3 +1,4 @@
+import { FC } from 'react';
 import {
   Modal,
   ModalBody,
@@ -6,8 +7,7 @@ import {
   ModalHeader,
   ModalOverlay,
 } from '@chakra-ui/modal';
-import { FC } from 'react';
-import ImageLoadable from '../components/image-loadable';
+import ImageLoadable from './image-loadable';
 
 export const FullImageModal: FC<
   Omit<Parameters<typeof Modal>[0], 'children'> & {
@@ -19,8 +19,9 @@ export const FullImageModal: FC<
     <Modal {...rest} isOpen={isOpen} onClose={onClose}>
       <ModalOverlay />
       <ModalContent maxW='1024px' minH='80vh'>
-        <ModalHeader>{title ? title : 'Full size screenshot'}</ModalHeader>
-        <ModalCloseButton />
+        <ModalHeader mb='2'>
+          <ModalCloseButton />
+        </ModalHeader>
         <ModalBody>
           <ImageLoadable src={src} maxW='full' />
         </ModalBody>
