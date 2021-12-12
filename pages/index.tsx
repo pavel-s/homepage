@@ -55,7 +55,7 @@ const Home: NextPage = () => {
               </Text>
             </Heading>
             <Text mt='4'>
-              I'm a junior react developer. You can see some of my projects
+              I&apos;m a junior react developer. You can see some of my projects
               below. In the future I have plans to become a full stack developer
               (node.js/express back-end).
             </Text>
