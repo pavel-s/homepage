@@ -22,7 +22,13 @@ const ProjectCard = ({ project, showFullImage }: IProjectCardProps) => {
   const linkColor = colorMode === 'light' ? 'darkblue' : 'lightblue';
 
   const handleImageClick = () =>
-    project.imageFull && showFullImage && showFullImage(project.imageFull);
+    project.imageFull &&
+    showFullImage &&
+    showFullImage(
+      typeof project.imageFull === 'string'
+        ? project.imageFull
+        : project.imageFull[0]
+    );
 
   return (
     <ListItem display={{ md: 'flex' }} mb={6}>

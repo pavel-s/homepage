@@ -3,7 +3,7 @@ export interface IProject {
   description?: string;
   stack?: string;
   imagePreview?: string;
-  imageFull?: string;
+  imageFull?: string | string[];
   github?: string;
   link?: string;
 }

@@ -1,20 +1,16 @@
-// import '../styles/globals.css';
 import type { AppProps } from 'next/app';
-// import { ColorModeScript } from '@chakra-ui/react';
-import Chakra from '../lib/chakra';
-
-// interface MyAppProps extends AppProps {
-//   cookie: string;
-// }
+import { ChakraProvider } from '@chakra-ui/react';
+import theme from '../lib/theme';
+import MainLayout from '../layouts/main';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <Chakra cookies={pageProps.cookie}>
-      <Component {...pageProps} />
-    </Chakra>
+    <ChakraProvider theme={theme}>
+      <MainLayout>
+        <Component {...pageProps} />
+      </MainLayout>
+    </ChakraProvider>
   );
 }
-
-export { getServerSideProps } from './../lib/chakra';
 
 export default MyApp;
